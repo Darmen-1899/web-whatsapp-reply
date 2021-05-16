@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.forms{
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.divForm{
+  margin-top: 10%;
+
+
+}
+
+:host{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: gray;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.invalid {
+  color: red;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

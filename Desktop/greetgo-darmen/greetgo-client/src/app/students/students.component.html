@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<body>
+<header>
+  <h1>E-School</h1>
+</header>
+
+<div class="students">
+  <div>
+
+    <div class="table">
+      <h2>Список учеников:</h2>
+      <table border = "3">
+        <tr>
+          <th>id</th>
+          <th>Фамилия</th>
+          <th>Имя</th>
+          <th>Возраст</th>
+          <th>Класс</th>
+          <th></th>
+        </tr>
+        <tr *ngFor = "let student of students">
+          <td>{{student.id}}</td>
+          <td>{{student.lastname}}</td>
+          <td>{{student.firstname}}</td>
+          <td>{{student.yearsOld}}</td>
+          <td>{{student.grade}}</td>
+          <td><button (click)="deleteStudent(student.id)">Удалить</button></td>
+
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="forAddButton">
+    <button class="btn btn-secondary" (click)="openDialog()">Добавить ученика</button>
+  </div>
+</div>
+
+
+
+</body>
+
+
